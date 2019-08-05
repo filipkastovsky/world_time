@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap&subset=latin-ext");
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.react-wrapper header {
+  width: 100vw;
+  padding: 30vh 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f59692), to(#ffc4bb));
+  background: linear-gradient(180deg, #f59692 0%, #ffc4bb 100%);
+}
+
+.react-wrapper header h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 14vw;
+}
+
+.react-wrapper header .user-time-zone {
+  margin-top: -5vh;
+  color: white;
+  font-weight: normal;
+  font-size: 4vw;
+}
+
+.react-wrapper header img {
+  height: 8vw;
+}
+
+.react-wrapper header :hover {
+  -webkit-transform: translateY(1vh);
+          transform: translateY(1vh);
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+.react-wrapper .time-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.react-wrapper .time-container :hover {
+  -webkit-transform: translateY(1vh);
+          transform: translateY(1vh);
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+.react-wrapper .time-container :nth-child(2) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  color: #8ccbc1;
+}
+
+.react-wrapper .time-container :nth-child(2) ::-webkit-input-placeholder {
+  color: #8ccbc1;
+}
+
+.react-wrapper .time-container :nth-child(2) :-ms-input-placeholder {
+  color: #8ccbc1;
+}
+
+.react-wrapper .time-container :nth-child(2) ::-ms-input-placeholder {
+  color: #8ccbc1;
+}
+
+.react-wrapper .time-container :nth-child(2) ::placeholder {
+  color: #8ccbc1;
+}
+
+.react-wrapper .time-container :nth-child(2) button {
+  background: #8ccbc1;
+}
+
+.react-wrapper .time-container :nth-child(3) {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#ffffff));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  color: #f59692;
+}
+
+.react-wrapper .time-container :nth-child(3) ::-webkit-input-placeholder {
+  color: #f59692;
+}
+
+.react-wrapper .time-container :nth-child(3) :-ms-input-placeholder {
+  color: #f59692;
+}
+
+.react-wrapper .time-container :nth-child(3) ::-ms-input-placeholder {
+  color: #f59692;
+}
+
+.react-wrapper .time-container :nth-child(3) ::placeholder {
+  color: #f59692;
+}
+
+.react-wrapper .time-container :nth-child(3) button {
+  background: #f59692;
+}
+
+.react-wrapper .time-container .bg {
+  z-index: -1;
+  position: absolute;
+  top: 100vh;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../assets/alarm-clock-art-background-1037993-vertical.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.react-wrapper .time-container .time-card {
+  height: 40vh;
+  width: 40vh;
+  border-radius: 40px;
+  text-align: center;
+  padding: 5%;
+}
+
+.react-wrapper .time-container .time-card .input {
+  background: none;
+  height: 6vh;
+  width: 50vw;
+  color: inherit;
+  font-size: 4vw;
+  padding: 5%;
+}
+
+.react-wrapper .time-container .time-card button {
+  color: #ffffff;
+  height: 6vh;
+  width: 6vh;
+  border-radius: 1vh;
+}
+
+.react-wrapper .time-container .time-card .location {
+  font-size: 5vw;
+  margin-top: 1vh;
+}
+
+.react-wrapper .time-container .time-card .time {
+  font-size: 14vw;
+  font-weight: bold;
+}
+
+.react-wrapper .time-container .time-card .utc {
+  font-size: 4vw;
+}
+
+.react-wrapper .time-container .time-card .day-of-week {
+  font-size: 6vw;
+}
+
+.react-wrapper .time-container .time-card .date {
+  font-size: 5vw;
+}
+
+@media only screen and (min-width: 425px) {
+  .react-wrapper .time-container .time-card .input {
+    width: 35vw;
+    font-size: 3vw;
+  }
+  .react-wrapper .time-container .time-card button {
+    border-radius: 1vh;
+    font-size: 3vw;
+  }
+  .react-wrapper .time-container .time-card .location {
+    font-size: 3vw;
+  }
+  .react-wrapper .time-container .time-card .time {
+    font-size: 10vw;
+    font-weight: bold;
+  }
+  .react-wrapper .time-container .time-card .utc {
+    font-size: 3vw;
+  }
+  .react-wrapper .time-container .time-card .day-of-week {
+    font-size: 4vw;
+  }
+  .react-wrapper .time-container .time-card .date {
+    font-size: 4vw;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .react-wrapper .time-container .time-card .input {
+    width: 19vw;
+    font-size: 2vw;
+  }
+  .react-wrapper .time-container .time-card button {
+    border-radius: 1vh;
+    font-size: 2vw;
+    width: 5vw;
+    height: 5vw;
+  }
+  .react-wrapper .time-container .time-card .location {
+    font-size: 2vw;
+  }
+  .react-wrapper .time-container .time-card .time {
+    font-size: 6vw;
+    font-weight: bold;
+  }
+  .react-wrapper .time-container .time-card .utc {
+    font-size: 1.5vw;
+  }
+  .react-wrapper .time-container .time-card .day-of-week {
+    font-size: 2vw;
+  }
+  .react-wrapper .time-container .time-card .date {
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .react-wrapper header {
+    padding: 10vh 0;
+  }
+  .react-wrapper .time-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .react-wrapper .time-container :nth-child(2) {
+    color: #f59692;
+  }
+  .react-wrapper .time-container :nth-child(2) ::-webkit-input-placeholder {
+    color: #f59692;
+  }
+  .react-wrapper .time-container :nth-child(2) :-ms-input-placeholder {
+    color: #f59692;
+  }
+  .react-wrapper .time-container :nth-child(2) ::-ms-input-placeholder {
+    color: #f59692;
+  }
+  .react-wrapper .time-container :nth-child(2) ::placeholder {
+    color: #f59692;
+  }
+  .react-wrapper .time-container :nth-child(2) button {
+    background: #f59692;
+  }
+  .react-wrapper .time-container :nth-child(3) {
+    color: #8ccbc1;
+  }
+  .react-wrapper .time-container :nth-child(3) ::-webkit-input-placeholder {
+    color: #8ccbc1;
+  }
+  .react-wrapper .time-container :nth-child(3) :-ms-input-placeholder {
+    color: #8ccbc1;
+  }
+  .react-wrapper .time-container :nth-child(3) ::-ms-input-placeholder {
+    color: #8ccbc1;
+  }
+  .react-wrapper .time-container :nth-child(3) ::placeholder {
+    color: #8ccbc1;
+  }
+  .react-wrapper .time-container :nth-child(3) button {
+    background: #8ccbc1;
+  }
+  .react-wrapper .time-container .bg {
+    background-image: url("../assets/alarm-clock-art-background-1037993.jpg");
+  }
+  .react-wrapper .time-container .time-card {
+    -webkit-transform: translateY(-17.5vh);
+            transform: translateY(-17.5vh);
+    padding: 1% 5%;
+    word-wrap: break-word;
+    height: 50vh;
+    width: 45vw;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  }
+  .react-wrapper .time-container .time-card .input {
+    text-align: center;
+    height: 8vh;
+    width: 25vw;
+    color: inherit;
+    font-size: 2.5vw;
+    padding: 2%;
+  }
+  .react-wrapper .time-container .time-card button {
+    color: #ffffff;
+    height: 8vh;
+    width: 8vw;
+    border-radius: 1vh;
+  }
+  .react-wrapper .time-container .time-card .location {
+    font-size: 3vw;
+  }
+  .react-wrapper .time-container .time-card .time {
+    font-size: 10vw;
+    font-weight: bold;
+  }
+  .react-wrapper .time-container .time-card .utc {
+    font-size: 3vw;
+  }
+  .react-wrapper .time-container .time-card .day-of-week {
+    font-size: 4vw;
+  }
+  .react-wrapper .time-container .time-card .date {
+    font-size: 3vw;
+  }
+}
+
+footer {
+  height: 10vh;
+  font-size: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(#a9ded4), to(#8ccbc1));
+  background: linear-gradient(90deg, #a9ded4 0%, #8ccbc1 100%);
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 4vw;
+}
+
+footer :hover {
+  -webkit-text-decoration: underline #ffffff;
+          text-decoration: underline #ffffff;
+}
+
+@media only screen and (min-width: 1024px) {
+  footer a {
+    font-size: 1.5vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */

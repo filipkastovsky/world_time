@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap&subset=latin-ext');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.react-wrapper {
+  header {
+    width: 100vw;
+    padding: 30vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(180deg, #f59692 0%, #ffc4bb 100%);
+    h1 {
+      color: white;
+      font-weight: bold;
+      font-size: 14vw;
+    }
+    .user-time-zone {
+      margin-top: -5vh;
+      color: white;
+      font-weight: normal;
+      font-size: 4vw;
+    }
+    img {
+      height: 8vw;
+    }
+    :hover {
+      transform: translateY(1vh);
+      transition: all 1s ease-in;
+    }
+  }
+  .time-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    :hover {
+      transform: translateY(1vh);
+      transition: all 1s ease-in;
+    }
+    :nth-child(2) {
+      background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      color: #8ccbc1;
+
+      ::placeholder {
+        color: #8ccbc1;
+      }
+      button {
+        background: #8ccbc1;
+      }
+    }
+    :nth-child(3) {
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        #ffffff 100%
+      );
+      color: #f59692;
+
+      ::placeholder {
+        color: #f59692;
+      }
+      button {
+        background: #f59692;
+      }
+    }
+
+    .bg {
+      z-index: -1;
+      position: absolute;
+      top: 100vh;
+      height: 100vh;
+      width: 100vw;
+      background-image: url('../assets/alarm-clock-art-background-1037993-vertical.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .time-card {
+      height: 40vh;
+      width: 40vh;
+      border-radius: 40px;
+      text-align: center;
+      padding: 5%;
+
+      .input {
+        background: none;
+        height: 6vh;
+        width: 50vw;
+        color: inherit;
+        font-size: 4vw;
+        padding: 5%;
+      }
+
+      button {
+        color: #ffffff;
+
+        height: 6vh;
+        width: 6vh;
+        border-radius: 1vh;
+      }
+      .location {
+        font-size: 5vw;
+        margin-top: 1vh;
+      }
+      .time {
+        font-size: 14vw;
+        font-weight: bold;
+      }
+      .utc {
+        font-size: 4vw;
+      }
+      .day-of-week {
+        font-size: 6vw;
+      }
+      .date {
+        font-size: 5vw;
+      }
+
+      @media only screen and (min-width: 425px) {
+        .input {
+          width: 35vw;
+          font-size: 3vw;
+        }
+        button {
+          border-radius: 1vh;
+          font-size: 3vw;
+        }
+        .location {
+          font-size: 3vw;
+        }
+        .time {
+          font-size: 10vw;
+          font-weight: bold;
+        }
+        .utc {
+          font-size: 3vw;
+        }
+        .day-of-week {
+          font-size: 4vw;
+        }
+        .date {
+          font-size: 4vw;
+        }
+      }
+      @media only screen and (min-width: 650px) {
+        .input {
+          width: 19vw;
+          font-size: 2vw;
+        }
+        button {
+          border-radius: 1vh;
+          font-size: 2vw;
+          width: 5vw;
+          height: 5vw;
+        }
+        .location {
+          font-size: 2vw;
+        }
+        .time {
+          font-size: 6vw;
+          font-weight: bold;
+        }
+        .utc {
+          font-size: 1.5vw;
+        }
+        .day-of-week {
+          font-size: 2vw;
+        }
+        .date {
+          font-size: 3vw;
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    header {
+      padding: 10vh 0;
+    }
+
+    .time-container {
+      flex-direction: row;
+      :nth-child(2) {
+        color: #f59692;
+
+        ::placeholder {
+          color: #f59692;
+        }
+        button {
+          background: #f59692;
+        }
+      }
+
+      :nth-child(3) {
+        color: #8ccbc1;
+
+        ::placeholder {
+          color: #8ccbc1;
+        }
+        button {
+          background: #8ccbc1;
+        }
+      }
+      .bg {
+        background-image: url('../assets/alarm-clock-art-background-1037993.jpg');
+      }
+      .time-card {
+        transform: translateY(-17.5vh);
+        padding: 1% 5%;
+        word-wrap: break-word;
+        height: 50vh;
+        width: 45vw;
+        background: linear-gradient(
+          180deg,
+          #ffffff 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        .input {
+          text-align: center;
+          height: 8vh;
+          width: 25vw;
+          color: inherit;
+          font-size: 2.5vw;
+          padding: 2%;
+        }
+
+        button {
+          color: #ffffff;
+
+          height: 8vh;
+          width: 8vw;
+          border-radius: 1vh;
+        }
+        .location {
+          font-size: 3vw;
+        }
+        .time {
+          font-size: 10vw;
+          font-weight: bold;
+        }
+        .utc {
+          font-size: 3vw;
+        }
+        .day-of-week {
+          font-size: 4vw;
+        }
+        .date {
+          font-size: 3vw;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  height: 10vh;
+  font-size: 5vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(90deg, #a9ded4 0%, #8ccbc1 100%);
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 4vw;
+  }
+  :hover {
+    text-decoration: underline #ffffff;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  footer {
+    a {
+      font-size: 1.5vw;
+    }
+  }
+}
