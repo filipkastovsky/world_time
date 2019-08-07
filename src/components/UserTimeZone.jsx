@@ -8,7 +8,7 @@ class UserTimeZone extends Component {
     utcOffset: ''
   };
 
-  APIURL = 'http://worldtimeapi.org/api/ip';
+  APIURL = 'https://worldtimeapi.org/api/ip';
 
   fetchUserTimeZone = () => {
     fetch(`${this.APIURL}`)

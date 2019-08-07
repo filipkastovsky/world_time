@@ -23,7 +23,7 @@ class Time extends Component {
     year: ''
   };
 
-  APIURL = 'http://worldtimeapi.org/api/timezone/';
+  APIURL = 'https://worldtimeapi.org/api/timezone/';
 
   fetchTimeZones = () => {
     fetch(this.APIURL)
