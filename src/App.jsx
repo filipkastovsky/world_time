@@ -19,6 +19,10 @@ class App extends Component {
           <Time />
           <Time />
         </div>
+        <footer>
+      <a href="https://github.com/filipkastovsky/world_time">View on Github</a>
+      <a href="https://filipkastovsky.github.io">by Filip Kaštovský</a>
+    </footer>
       </div>
     );
   }
