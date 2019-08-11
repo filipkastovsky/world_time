@@ -42,10 +42,6 @@ body {
     img {
       height: 8vw;
     }
-    :hover {
-      transform: translateY(1vh);
-      transition: all 1s ease-in;
-    }
   }
   .time-container {
     height: 100vh;
@@ -53,38 +49,40 @@ body {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-  }
-  :nth-child(2) {
-    background: linear-gradient(
-      180deg,
-      #ffffff 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    color: #8ccbc1;
 
-    ::placeholder {
+    :nth-child(2) {
+      background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
       color: #8ccbc1;
-    }
-    button {
-      background: #8ccbc1;
-    }
-  }
-  :nth-child(3) {
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0) 0%,
-      #ffffff 100%
-    );
-    color: #f59692;
 
-    ::placeholder {
+      ::placeholder {
+        color: #8ccbc1;
+      }
+      button {
+        background: #8ccbc1;
+        color: #ffffff;
+      }
+    }
+    :nth-child(3) {
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        #ffffff 100%
+      );
       color: #f59692;
-    }
-    button {
-      background: #f59692;
+
+      ::placeholder {
+        color: #f59692;
+      }
+      button {
+        background: #f59692;
+        color: #ffffff;
+      }
     }
   }
-
   .bg {
     z-index: -1;
     position: absolute;
@@ -194,83 +192,84 @@ body {
   }
 }
 @media only screen and (min-width: 1024px) {
-  header {
-    padding: 10vh 0;
-  }
+  .react-wrapper {
+    header {
+      padding: 10vh 0;
+    }
 
-  .time-container {
-    flex-direction: row;
-    :nth-child(2) {
-      color: #f59692;
-
-      ::placeholder {
+    .time-container {
+      flex-direction: row;
+      :nth-child(2) {
         color: #f59692;
-      }
-      button {
-        background: #f59692;
-      }
-    }
 
-    :nth-child(3) {
-      color: #8ccbc1;
+        ::placeholder {
+          color: #f59692;
+        }
+        button {
+          background: #f59692;
+        }
+      }
 
-      ::placeholder {
+      :nth-child(3) {
         color: #8ccbc1;
-      }
-      button {
-        background: #8ccbc1;
-      }
-    }
-    .bg {
-      background-image: url('../assets/alarm-clock-art-background-1037993.jpg');
-    }
-    .time-card {
-      transform: translateY(-17.5vh);
-      padding: 1% 5%;
-      word-wrap: break-word;
-      height: 50vh;
-      width: 45vw;
-      background: linear-gradient(
-        180deg,
-        #ffffff 0%,
-        rgba(255, 255, 255, 0) 100%
-      );
-      .input {
-        text-align: center;
-        height: 8vh;
-        width: 25vw;
-        color: inherit;
-        font-size: 2.5vw;
-        padding: 2%;
-      }
 
-      button {
-        color: #ffffff;
+        ::placeholder {
+          color: #8ccbc1;
+        }
+        button {
+          background: #8ccbc1;
+        }
+      }
+      .bg {
+        background-image: url('../assets/alarm-clock-art-background-1037993.jpg');
+      }
+      .time-card {
+        transform: translateY(-17.5vh);
+        padding: 1% 5%;
+        word-wrap: break-word;
+        height: 50vh;
+        width: 45vw;
+        background: linear-gradient(
+          180deg,
+          #ffffff 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        .input {
+          text-align: center;
+          height: 8vh;
+          width: 25vw;
+          color: inherit;
+          font-size: 2.5vw;
+          padding: 2%;
+        }
 
-        height: 8vh;
-        width: 8vw;
-        border-radius: 1vh;
-      }
-      .location {
-        font-size: 3vw;
-      }
-      .time {
-        font-size: 10vw;
-        font-weight: bold;
-      }
-      .utc {
-        font-size: 3vw;
-      }
-      .day-of-week {
-        font-size: 4vw;
-      }
-      .date {
-        font-size: 3vw;
+        button {
+          color: #ffffff;
+
+          height: 8vh;
+          width: 8vw;
+          border-radius: 1vh;
+        }
+        .location {
+          font-size: 3vw;
+        }
+        .time {
+          font-size: 10vw;
+          font-weight: bold;
+        }
+        .utc {
+          font-size: 3vw;
+        }
+        .day-of-week {
+          font-size: 4vw;
+        }
+        .date {
+          font-size: 3vw;
+        }
       }
     }
   }
 }
-
 footer {
   height: 10vh;
   font-size: 5vw;

@@ -55,13 +55,6 @@ body {
   height: 8vw;
 }
 
-.react-wrapper header :hover {
-  -webkit-transform: translateY(1vh);
-          transform: translateY(1vh);
-  -webkit-transition: all 1s ease-in;
-  transition: all 1s ease-in;
-}
-
 .react-wrapper .time-container {
   height: 100vh;
   display: -webkit-box;
@@ -76,13 +69,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.react-wrapper .time-container :hover {
-  -webkit-transform: translateY(1vh);
-          transform: translateY(1vh);
-  -webkit-transition: all 1s ease-in;
-  transition: all 1s ease-in;
 }
 
 .react-wrapper .time-container :nth-child(2) {
@@ -109,6 +95,7 @@ body {
 
 .react-wrapper .time-container :nth-child(2) button {
   background: #8ccbc1;
+  color: #ffffff;
 }
 
 .react-wrapper .time-container :nth-child(3) {
@@ -135,9 +122,10 @@ body {
 
 .react-wrapper .time-container :nth-child(3) button {
   background: #f59692;
+  color: #ffffff;
 }
 
-.react-wrapper .time-container .bg {
+.react-wrapper .bg {
   z-index: -1;
   position: absolute;
   top: 100vh;
@@ -149,7 +137,7 @@ body {
   background-size: cover;
 }
 
-.react-wrapper .time-container .time-card {
+.react-wrapper .time-card {
   height: 40vh;
   width: 40vh;
   border-radius: 40px;
@@ -157,7 +145,7 @@ body {
   padding: 5%;
 }
 
-.react-wrapper .time-container .time-card .input {
+.react-wrapper .time-card .input {
   background: none;
   height: 6vh;
   width: 50vw;
@@ -166,87 +154,87 @@ body {
   padding: 5%;
 }
 
-.react-wrapper .time-container .time-card button {
+.react-wrapper .time-card button {
   color: #ffffff;
   height: 6vh;
   width: 6vh;
   border-radius: 1vh;
 }
 
-.react-wrapper .time-container .time-card .location {
+.react-wrapper .time-card .location {
   font-size: 5vw;
   margin-top: 1vh;
 }
 
-.react-wrapper .time-container .time-card .time {
+.react-wrapper .time-card .time {
   font-size: 14vw;
   font-weight: bold;
 }
 
-.react-wrapper .time-container .time-card .utc {
+.react-wrapper .time-card .utc {
   font-size: 4vw;
 }
 
-.react-wrapper .time-container .time-card .day-of-week {
+.react-wrapper .time-card .day-of-week {
   font-size: 6vw;
 }
 
-.react-wrapper .time-container .time-card .date {
+.react-wrapper .time-card .date {
   font-size: 5vw;
 }
 
 @media only screen and (min-width: 425px) {
-  .react-wrapper .time-container .time-card .input {
+  .react-wrapper .time-card .input {
     width: 35vw;
     font-size: 3vw;
   }
-  .react-wrapper .time-container .time-card button {
+  .react-wrapper .time-card button {
     border-radius: 1vh;
     font-size: 3vw;
   }
-  .react-wrapper .time-container .time-card .location {
+  .react-wrapper .time-card .location {
     font-size: 3vw;
   }
-  .react-wrapper .time-container .time-card .time {
+  .react-wrapper .time-card .time {
     font-size: 10vw;
     font-weight: bold;
   }
-  .react-wrapper .time-container .time-card .utc {
+  .react-wrapper .time-card .utc {
     font-size: 3vw;
   }
-  .react-wrapper .time-container .time-card .day-of-week {
+  .react-wrapper .time-card .day-of-week {
     font-size: 4vw;
   }
-  .react-wrapper .time-container .time-card .date {
+  .react-wrapper .time-card .date {
     font-size: 4vw;
   }
 }
 
 @media only screen and (min-width: 650px) {
-  .react-wrapper .time-container .time-card .input {
+  .react-wrapper .time-card .input {
     width: 19vw;
     font-size: 2vw;
   }
-  .react-wrapper .time-container .time-card button {
+  .react-wrapper .time-card button {
     border-radius: 1vh;
     font-size: 2vw;
     width: 5vw;
     height: 5vw;
   }
-  .react-wrapper .time-container .time-card .location {
+  .react-wrapper .time-card .location {
     font-size: 2vw;
   }
-  .react-wrapper .time-container .time-card .time {
+  .react-wrapper .time-card .time {
     font-size: 6vw;
     font-weight: bold;
   }
-  .react-wrapper .time-container .time-card .utc {
+  .react-wrapper .time-card .utc {
     font-size: 1.5vw;
   }
-  .react-wrapper .time-container .time-card .day-of-week {
+  .react-wrapper .time-card .day-of-week {
     font-size: 2vw;
   }
-  .react-wrapper .time-container .time-card .date {
+  .react-wrapper .time-card .date {
     font-size: 3vw;
   }
 }
